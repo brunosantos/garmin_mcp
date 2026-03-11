@@ -207,7 +207,7 @@ def main():
     workouts.configure(garmin_client)
 
     # Create the MCP app
-    app = FastMCP("Garmin Connect v1.0")
+    app = FastMCP("Garmin Connect MCP v0.1")
 
     # Register tools from required modules
     app = activity_management.register_tools(app)
