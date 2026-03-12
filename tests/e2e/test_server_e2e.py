@@ -41,7 +41,7 @@ async def test_mcp_server_connection():
     # Use python module execution instead of direct script path
     server_params = StdioServerParameters(
         command="python",
-        args=["-m", "garmin_mcp"],
+        args=["-m", "garmin_workouts_mcp"],
         env=None,  # Uses current environment which includes .env variables
     )
 
@@ -79,7 +79,7 @@ async def test_list_activities_tool():
     """Test the list_activities MCP tool with real API"""
     server_params = StdioServerParameters(
         command="python",
-        args=["-m", "garmin_mcp"],
+        args=["-m", "garmin_workouts_mcp"],
         env=None,
     )
 
@@ -113,7 +113,7 @@ async def test_get_steps_data_tool():
     """Test the get_steps_data MCP tool with real API"""
     server_params = StdioServerParameters(
         command="python",
-        args=["-m", "garmin_mcp"],
+        args=["-m", "garmin_workouts_mcp"],
         env=None,
     )
 
@@ -149,7 +149,7 @@ async def test_multiple_tools():
     """Test multiple MCP tools in a single session"""
     server_params = StdioServerParameters(
         command="python",
-        args=["-m", "garmin_mcp"],
+        args=["-m", "garmin_workouts_mcp"],
         env=None,
     )
 

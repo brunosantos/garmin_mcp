@@ -12,9 +12,9 @@ from garth.exc import GarthHTTPError
 from garminconnect import Garmin, GarminConnectAuthenticationError
 
 # Import required modules
-from garmin_mcp import activity_management
-from garmin_mcp import workouts
-from garmin_mcp import workout_templates
+from garmin_workouts_mcp import activity_management
+from garmin_workouts_mcp import workouts
+from garmin_workouts_mcp import workout_templates
 
 
 def is_interactive_terminal() -> bool:
