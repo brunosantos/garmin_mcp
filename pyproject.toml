@@ -18,7 +18,7 @@ dependencies = [
 
 [project.scripts]
 garmin-workouts-mcp = "garmin_workouts_mcp:main"
-garmin-workouts-mcp-auth = "garmin_workouts_mcp.auth_cli:main"
+garmin-mcp-auth = "garmin_workouts_mcp.auth_cli:main"
 
 [tool.uv]
 dev-dependencies = [
